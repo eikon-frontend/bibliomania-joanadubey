@@ -13,3 +13,266 @@
 }
 
 /* 🦊 Vos styles ici */
+
+body {
+  font-family: Kanit;
+  margin: 0%;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-top: 0%;
+}
+
+
+.flèche {
+  margin-right: auto;
+
+}
+
+
+.tout {
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.tout img {
+  border-radius: 10px;
+  max-width: 260px;
+
+
+}
+
+h1 {
+  font-size: 48px;
+  color: #1d5847;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.infos {
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 500;
+
+}
+
+.stars {
+  margin-top: 8px;
+}
+
+.texte {
+  font-size: 14px;
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+.notation {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.notation2 {
+  margin-bottom: 30px;
+  gap: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+strong {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+.colonnegauche {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+}
+
+.colonnedroite {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.notation p {
+  font-size: 8px;
+}
+
+
+.footer {
+  background-color: #1D5847;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(255, 255, 255);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  transition: height 0.5s ease-out;
+  z-index: 100;
+}
+
+.overlay-content {
+  padding: 20px;
+  overflow-y: auto;
+  /* Allow vertical scrolling */
+  max-height: calc(100vh - 60px);
+  /* Adjust the maximum height as needed */
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+}
+
+button:focus {
+  outline: none;
+}
+
+.overlay-open .overlay-background {
+  display: block;
+  /* Show the dark overlay when the overlay is open */
+}
+
+
+.overlay-open {
+  overflow: hidden;
+  /* Disable scrolling of the main page */
+}
+
+.overlay-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black overlay */
+  z-index: 99;
+  display: none;
+  /* Initially hidden */
+}
+
+.comm {
+  font-family: Pattaya;
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+}
+
+
+hr {
+  color: #D1D9E2;
+  max-width: 92%;
+  margin-top: 0%;
+}
+
+.profils {
+  display: flex;
+  flex-direction: column;
+}
+
+.debutprofil {
+  display: flex;
+  align-items: center;
+}
+
+.dates {
+  font-size: 7px;
+  display: flex;
+  margin-left: auto;
+  margin-right: 20px;
+  font-weight: 200px;
+
+}
+
+.stars2 {
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.pprofil {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.textecom {
+  font-size: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+overlay .footercommentaires {
+  position: fixed;
+  bottom: -50px;
+
+
+}
+
+.overlay-open .footercommentaires {
+  position: sticky;
+  bottom: 0%;
+}
+
+.barre {
+  font-size: 17px;
+  color: #9E9E9E;
+  background-color: #D1D9E2;
+  padding-left: 10px;
+  padding-right: 130px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  font-weight: 200px;
+}
+
+.footercommentaires {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
